@@ -14,6 +14,7 @@ function onSubmit(event) {
 }
 
 function paintGreeings() {
+  const username = loginInput.value;
   greeting.innerText = `hi ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
@@ -25,5 +26,5 @@ if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   loginForm.addEventListener("submit", onSubmit);
 } else {
-  paintGreeings();
+  paintGreeings(savedUsername);
 }
