@@ -1,9 +1,67 @@
-.calculator {
+@import "reset.css";
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#clear-enter__button {
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#displayed__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.number,
+.double,
+.calculate__operate,
+.point {
+  margin: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0px 15px 17px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 17px -3px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease-in-out;
+}
+
+.double {
+  width: 110px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.number:hover {
+  -webkit-box-shadow: 0px 15px 17px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 17px -3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 1px;
+}
+
+.number:active {
+  background-color: black;
 }

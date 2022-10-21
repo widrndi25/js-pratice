@@ -41,6 +41,8 @@ function handleClick(event) {
     let result = calculate(Number(number1), calculateType, Number(number2));
     console.log(result);
     displayedNumber.innerText = result;
+    number1 = result;
+    number2 = "";
   }
 
   if (className === "clear double") {
@@ -49,7 +51,7 @@ function handleClick(event) {
     let number2 = "";
     let calculateType = "";
     let isOperatebtnClicked = false;
-    displayedNumber.innerText = "여기에 이제 숫자가 들어온다는거고";
+    displayedNumber.innerText = "숫자 넣어봐";
   }
 }
 
