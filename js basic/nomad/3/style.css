@@ -1,0 +1,13 @@
+#gernerate-form,
+#guess-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#gernerate-form {
+  font-weight: bold;
+}
+
+input {
+  margin: 0px 5px;
+}
